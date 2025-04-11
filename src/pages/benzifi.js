@@ -36,6 +36,9 @@ import tipping from "../assets/tipping.png";
 import gearToken from "../assets/gear-token.png";
 import carCafe from "../assets/car-cafe.png";
 import playstoreIcon from "../assets/play-store.svg";
+import appStoreIcon from "../assets/apple-icon.svg"
+import dubaiFlag from "../assets/dubai-flag.png"
+
 
 const Benzifi = () => {
   return (
@@ -58,7 +61,9 @@ const Benzifi = () => {
               </button>
             </div>
             <div className="apps-wrapper">
-              <button className="app-button">App Store</button>
+              <button className="app-button">
+              <img src={appStoreIcon} alt="app-store-icon" />
+                App Store</button>
               <button className="app-button" style={{ opacity: "0.5" }}>
                 <img src={playstoreIcon} alt="playstore-icon" />
                 Google Play Store
@@ -302,7 +307,7 @@ const Benzifi = () => {
               class="app-button"
               target="_blank"
             >
-              <img src="/static/media/apple-icon.d5234a5f73a9e49c1470d172f6f44f57.svg" />
+              <img src={appStoreIcon} alt="apple-icon"/>
               App Store
             </Link>
             <button class="app-button" style={{ opacity: "0.5" }}>
@@ -312,7 +317,7 @@ const Benzifi = () => {
           </div>
         </div>
         <div class="footer-information">
-          <p class="copyright">© Proudly made in UAE by Benzifi</p>
+          <p class="copyright">© Proudly made in UAE {" "}<img src={dubaiFlag} className='dubai-flag' height="20px"alt='flag'/> by Benzifi</p>
           <div class="link-section">
             <Link class="link-text">Privacy Policy</Link>
             <Link class="link-text">Terms of Use</Link>

@@ -178,7 +178,7 @@
 .get-started-section-wrapper .get-started-wrapper .inner-section .sub-section .panel {
   font-size: 18px;
   height: 93px;
-  width: calc(50% - 32px);
+  width: calc(60% - 32px);
 }
 }
 @media screen and (max-width: 600px) {
